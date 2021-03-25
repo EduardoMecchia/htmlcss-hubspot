@@ -222,7 +222,7 @@ section.first > div > p{
     line-height: 30px;
 }
 .feature{
-    font-weight: bold;
+    font-weight: 600;
     font-size: 20px;
 }
 .first.product > .right > .line{
@@ -267,6 +267,35 @@ section.first > div > p{
 /* Second section rules */
 
 section.second{
-    height: 800px;
+    height: 800px; /* Will remove once styling is finished */
     background-color: #02a7ba;
+    text-align: center;
+}
+section.second > .container *{
+    color: white;
+}
+section.second h1{
+    padding-top: 55px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 30px;
+}
+section.second .first.row{
+    margin-top: 50px;
+}
+/* section.second .second.row{
+    padding
+} */
+section.second .box{
+    float: left;
+    height: 200px;
+    width: calc(100%/4);
+    /* background-color: white; */
+    border-right: 1px solid white;
+}
+section.second .box:last-child{
+    border-right: 0;
+}
+section.second hr{
+    color: white;
 }
