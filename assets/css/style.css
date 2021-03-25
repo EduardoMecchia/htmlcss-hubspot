@@ -1,6 +1,70 @@
+/********************
+*Global Rules
+********************/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+.clearfix::after{
+    content:'';
+    display: table;
+    clear: both;
+}
+.button{
+    padding: 10px;
+    border: 1px solid #fe775a;
+    border-radius: 5px;
+    color: #fe775a;
+    text-decoration: none;
+}
+.filled{
+    background-color: #fe775a;
+    color: #fffbfa;
+}
+
+/********************
+*Header rules
+********************/
+
+/* First nav bar rules */
+
+.first.navbar{
+    color: #32495b;
+    padding: 30px 0;
+    background-color: #f4f9fd;
+    border-bottom: 2px solid #465b6b;
+}
+.first.nav_bar_left, .first.nav_bar_right{
+    float: left;
+    width: 25%;
+}
+.first.nav_bar_right{
+    float: right;
+}
+.first.nav_bar_left > span::after{
+    content: '|';
+    padding-left: 20px;
+}
+.first.nav_bar_left > a{
+    color: #32495b;
+    padding-left: 20px;
+    text-decoration: none;
+}
+#glass{
+    font-weight: bold;
+    color: #01a4bd;
+    display: inline-block;
+    transform: rotate(315deg);
+    font-size: 30px;
+    text-decoration: none;
+}
+.first.nav_bar_right > a:nth-child(2){
+    margin: 0 20px;
 }
