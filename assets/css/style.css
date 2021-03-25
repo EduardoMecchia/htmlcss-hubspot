@@ -25,7 +25,7 @@ body{
 .button{
     padding: 10px;
     border: 1px solid #fe775a;
-    border-radius: 5px;
+    border-radius: 7px;
     color: #fe775a;
     text-decoration: none;
 }
@@ -38,6 +38,23 @@ body{
 }
 .fas.fa-angle-down{
     margin-left: 5px;
+}
+.line{
+    display: inline-block;
+    background-color: #32495b;
+    height: 1px;
+    width: 400px;
+}
+.checkbox{
+    display: inline-block;
+    margin: 0 15px;
+    background-color: #fe775a;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    color: white;
+    font-size: 11px;
+    text-align: center;
 }
 
 /********************
@@ -142,18 +159,67 @@ nav.second a{
 *Main rules
 ********************/
 
+/* First section rules */
+
 section.first{
     background-color: #f4f9fd;
     text-align: center;
 }
-
 #cube{
     margin-top: 50px;
     height: 200px;
 }
-
 section.first > div > h1{
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 30px;
+}
+.product{
+    box-shadow: 1px 1px 20px 0px lightgrey;
+}
+.first.product{
+    background-color: white;
+    margin-top: 50px;
+}
+.first.product > *{
+    float: left;
+}
+.first.product > .left{
+    width: 30%;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-bottom: 60px;
+}
+.first.product > .right{
+    width: 70%;
+    padding-top: 60px;
+    padding-right: 60px;
+    padding-left: 40px;
+    text-align: initial;
+}
+.product_image{
+    height: 100px;
+}
+.product_title{
+    font-weight: bold;
+    font-size: 25px;
+}
+.product_button{
+    padding: 25px 40px;
+    display: inline-block;
+    margin-top: 30px;
+}
+.first.product > .right > p{
+    margin: 30px 0;
+    line-height: 30px;
+}
+.feature{
+    font-weight: bold;
+    font-size: 20px;
+}
+.first.product > .right > .line{
+    margin-left: 60px;
+}
+.pros{
+    margin: 40px 0;
 }
