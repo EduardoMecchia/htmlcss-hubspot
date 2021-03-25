@@ -28,6 +28,9 @@
     background-color: #fe775a;
     color: #fffbfa;
 }
+.unstyled{
+    list-style-type: none;
+}
 
 /********************
 *Header rules
@@ -37,27 +40,30 @@
 
 .first.navbar{
     color: #32495b;
-    padding: 30px 0;
     background-color: #f4f9fd;
     border-bottom: 2px solid #465b6b;
 }
-.first.nav_bar_left, .first.nav_bar_right{
+.first.navbar li{
+    padding: 20px 0;
+}
+#language, #contact{
     float: left;
-    width: 25%;
 }
-.first.nav_bar_right{
-    float: right;
+#glass, #login, #getfree{
+    float: right;   
 }
-.first.nav_bar_left > span::after{
+#contact{
+    margin-left: 20px;
+}
+#language::after{
     content: '|';
-    padding-left: 20px;
+    margin-left: 20px;
 }
-.first.nav_bar_left > a{
+#language > a, #contact > a{
     color: #32495b;
-    padding-left: 20px;
     text-decoration: none;
 }
-#glass{
+#glass > a{
     font-weight: bold;
     color: #01a4bd;
     display: inline-block;
@@ -65,6 +71,6 @@
     font-size: 30px;
     text-decoration: none;
 }
-.first.nav_bar_right > a:nth-child(2){
-    margin: 0 20px;
+#login{
+    margin: 0 25px;
 }
