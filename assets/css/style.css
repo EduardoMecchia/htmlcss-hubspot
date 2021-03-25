@@ -74,3 +74,25 @@
 #login{
     margin: 0 25px;
 }
+
+/* Second nav bar rules */  
+
+.second.navbar li{
+    padding: 20px 0;
+    margin-left: 30px;
+}
+
+.second.navbar a{
+    text-decoration: none;
+    color: #32495b;
+}
+
+#logo{
+    float: left;
+}
+
+#secondnav_1, #secondnav_2, #secondnav_3, #secondnav_4, #secondnav_5{
+    float: right;
+}
+
+
