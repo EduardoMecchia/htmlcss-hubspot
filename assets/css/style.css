@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    color: #32495b;
 }
 body{
     min-width: 1200px;
@@ -80,7 +81,7 @@ body{
 
 /* Second nav bar rules */  
 
-.second.navbar li{
+.second.navbar li:not(#logo){
     padding: 25px 0;
     margin-left: 30px;
 }
@@ -90,6 +91,7 @@ body{
 }
 #logo{
     float: left;
+    padding: 25px 0;
 }
 #secondnav_1, #secondnav_2, #secondnav_3, #secondnav_4, #secondnav_5{
     float: right;
@@ -110,5 +112,22 @@ body{
     border-top: 4px solid #33475b;
     border-bottom: 4px solid #33475b;
     background-color: #afebe4;
-
+}
+#jumbo_information{
+    width: 50%;
+    padding-top: 50px;
+}
+#jumbo_title{
+    font-size: 45px;
+}
+#jumbo_description{
+    margin: 35px 0;
+    line-height: 200%;
+}
+#jumbo_information > a{
+    display: inline-block;
+    padding: 25px 40px;
+}
+#jumbo_subtitle{
+    margin-top: 40px;
 }
