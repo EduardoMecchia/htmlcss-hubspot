@@ -46,12 +46,12 @@ body{
 
 /* First nav bar rules */
 
-.first.navbar{
+nav.first{
     color: #32495b;
     background-color: #f4f9fd;
     border-bottom: 1px solid #465b6b;
 }
-.first.navbar li{
+nav.first li{
     padding: 30px 0;
 }
 #language, #contact{
@@ -85,11 +85,11 @@ body{
 
 /* Second nav bar rules */  
 
-.second.navbar li:not(#logo){
+nav.second li:not(#logo){
     padding: 25px 0;
     margin-left: 30px;
 }
-.second.navbar a{
+nav.second a{
     text-decoration: none;
     color: #32495b;
 }
@@ -136,4 +136,24 @@ body{
 #jumbo_subtitle{
     margin-top: 40px;
     font-size: 13px;
+}
+
+/********************
+*Main rules
+********************/
+
+section.first{
+    background-color: #f4f9fd;
+    text-align: center;
+}
+
+#cube{
+    margin-top: 50px;
+    height: 200px;
+}
+
+section.first > div > h1{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
 }
