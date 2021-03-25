@@ -36,6 +36,9 @@ body{
 .unstyled{
     list-style-type: none;
 }
+.fas.fa-angle-down{
+    margin-left: 5px;
+}
 
 /********************
 *Header rules
