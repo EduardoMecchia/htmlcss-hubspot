@@ -481,8 +481,8 @@ section.second .stat_desc{
     background-color: #32495b;
 }
 
-#site_footer *{
-    color: white;
+#site_footer *:not(.footer_title, #support_button){
+    color: #c8d4e0;
 }
 
 .footer_column{
@@ -497,6 +497,7 @@ section.second .stat_desc{
 }
 
 .footer_title{
+    color: white;
     font-weight: bold;
     margin-bottom: 30px;
 }
