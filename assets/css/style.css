@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Arial', sans-serif;
     color: #32495b;
     font-weight: 500;
 }
@@ -164,7 +164,7 @@ nav.second a{
 
 #jumbo_title{
     font-size: 45px;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 #jumbo_description{
@@ -254,7 +254,7 @@ section.first > div > p{
 }
 
 .product_description{
-    height: 160px; /* Unsure if it should be a fixed height, but it makes all the products have equal height */
+    height: 120px; /* Unsure if it should be a fixed height, but it makes all the products have equal height */
     line-height: 30px;
 }
 
@@ -327,6 +327,13 @@ section.second{
 
 section.second > .container *{
     color: white;
+}
+
+section.second > .container > h1{
+    font-size: 33px; 
+}
+
+section.second > .container > p{
     line-height: 30px;
 }
 
@@ -348,7 +355,6 @@ section.second .second.row{
 section.second .stat_box{
     float: left;
     width: calc(100%/4);
-    /* background-color: white; */
     border-right: 1px solid white;
 }
 
@@ -373,7 +379,7 @@ section.second hr{
 }
 
 .stat_desc{
-    margin: 15px 0;
+    margin: 20px 0;
     font-size: 12px;
 }
 
