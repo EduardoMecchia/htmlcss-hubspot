@@ -254,6 +254,7 @@ section.first > div > p{
 }
 
 .product_description{
+    height: 160px; /* Unsure if it should be a fixed height, but it makes all the products have equal height */
     line-height: 30px;
 }
 
