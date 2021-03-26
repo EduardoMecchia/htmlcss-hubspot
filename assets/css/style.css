@@ -383,7 +383,7 @@ section.second .stat_desc{
     font-size: 12px;
 }
 
-/* Third section rules */
+/* First part of third section rules */
 
 section.third{
     height: 800px;
@@ -431,3 +431,48 @@ section.third{
     font-weight: bold;
 }
 
+/* Second part of third section rules */
+
+.get_product{
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.get_product_info, .get_product_image{
+    float: left;
+}
+
+.get_product_image{
+    text-align: right;
+}
+
+.get_product_info{
+    width: 40%;
+}
+
+.get_product_image{
+    width: 60%;
+}
+
+.get_product_image > img{
+    height: 410px;
+}
+
+.get_product_title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.get_product_desc{
+    line-height: 30px;
+    margin: 40px 0;
+}
+
+.get_product a{
+    margin: 0;
+}
+
+.get_product_subtitle{
+    font-size: 13px;
+    margin-top: 40px;
+}
