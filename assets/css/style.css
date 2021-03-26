@@ -371,14 +371,14 @@ section.second hr{
     font-size: 40px;
 }
 
-.stat_number::after{
+section.second .stat_number::after{
     margin-left: 5px;
     content: '+';
     font-size: 30px;
     font-weight: initial;
 }
 
-.stat_desc{
+section.second .stat_desc{
     margin: 20px 0;
     font-size: 12px;
 }
@@ -386,6 +386,48 @@ section.second hr{
 /* Third section rules */
 
 section.third{
-    background-color: red;
-    height: 100px;
+    height: 800px;
 }
+
+.company_section{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.company_data{
+    float: left;
+    width: 20%;
+}
+
+.company_row:first-child{
+    margin-bottom: 30px;
+    padding-top: 40px;
+}
+
+.company_box{
+    float: right;
+    padding-left: 50px;
+}
+
+.company_logo{
+    float: left;
+    width: 130px;
+    margin-right: 25px;
+}
+
+.company_number{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.company_desc{
+    margin-top: 40px;
+    line-height: 30px;
+}
+
+.company_desc > span{
+    font-weight: bold;
+}
+
