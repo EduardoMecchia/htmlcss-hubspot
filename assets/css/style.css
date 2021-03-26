@@ -321,13 +321,13 @@ section.first .row{
 /* Second section rules */
 
 section.second{
-    height: 800px; /* Will remove once styling is finished */
     background-color: #02a7ba;
     text-align: center;
 }
 
 section.second > .container *{
     color: white;
+    line-height: 30px;
 }
 
 section.second h1{
@@ -341,13 +341,12 @@ section.second .first.row{
     margin-top: 50px;
 }
 
-/* section.second .second.row{
-    padding
-} */
+section.second .second.row{
+    padding-bottom: 100px;
+}
 
-section.second .box{
+section.second .stat_box{
     float: left;
-    height: 200px;
     width: calc(100%/4);
     /* background-color: white; */
     border-right: 1px solid white;
@@ -359,4 +358,28 @@ section.second .box:last-child{
 
 section.second hr{
     color: white;
+}
+
+.stat_number{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.stat_number::after{
+    margin-left: 5px;
+    content: '+';
+    font-size: 30px;
+    font-weight: initial;
+}
+
+.stat_desc{
+    margin: 15px 0;
+    font-size: 12px;
+}
+
+/* Third section rules */
+
+section.third{
+    background-color: red;
+    height: 100px;
 }
