@@ -385,10 +385,6 @@ section.second .stat_desc{
 
 /* First part of third section rules */
 
-section.third{
-    height: 800px;
-}
-
 .company_section{
     width: 85%;
     margin-left: auto;
@@ -435,7 +431,7 @@ section.third{
 
 .get_product{
     margin-top: 100px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .get_product_info, .get_product_image{
@@ -475,4 +471,34 @@ section.third{
 .get_product_subtitle{
     font-size: 13px;
     margin-top: 40px;
+}
+
+/********************
+*Footer rules
+********************/
+
+#site_footer{
+    background-color: #32495b;
+    height: 800px;
+}
+
+.footer_menu *{
+    color: white;
+}
+
+.footer_column{
+    float: left;
+    width: 20%;
+    margin-top: 40px;
+    margin-right: 30px;
+}
+
+.footer_title{
+    font-weight: bold;
+}
+
+.footer_option{
+    display: block;
+    margin: 20px 0;
+    text-decoration: none;
 }
