@@ -600,7 +600,7 @@ section.second .stat_desc{
     box-shadow: -2px 5px 10px #000a;
 }
 
-.chat_button > img{
+.chat_button img{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -610,3 +610,13 @@ section.second .stat_desc{
 }
 
 /* Dropdown menus rules */
+
+.dropdown, .dropdown > li{
+    visibility: hidden;
+    display: none;
+}
+
+#nav_bar_language:hover .dropdown, .dropdown li{
+    visibility: visible;
+    display: block;
+}
