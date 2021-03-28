@@ -1,0 +1,555 @@
+/********************
+*Global Rules
+********************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    color: #32495b;
+    font-weight: 500;
+}
+
+body{
+    min-width: 1560px;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.clearfix::after{
+    content:'';
+    display: table;
+    clear: both;
+}
+
+.button{
+    padding: 10px;
+    border: 1px solid #fe775a;
+    border-radius: 7px;
+    color: #fe775a;
+    text-decoration: none;
+}
+
+.filled{
+    background-color: #fe775a;
+    color: #fffbfa;
+}
+
+.unstyled{
+    list-style-type: none;
+}
+
+.fas.fa-angle-down{
+    margin-left: 5px;
+}
+
+.line{
+    display: inline-block;
+    background-color: #32495b;
+    height: 1px;
+    width: 300px;
+}
+
+.checkbox{
+    display: inline-block;
+    margin: 0 15px;
+    background-color: #fe775a;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+}
+
+/********************
+*Header rules
+********************/
+
+/* First nav bar rules */
+
+nav.first{
+    color: #32495b;
+    background-color: #f4f9fd;
+    border-bottom: 1px solid #465b6b;
+}
+
+nav.first li{
+    padding: 30px 0;
+}
+
+#language, #contact{
+    float: left;
+}
+
+#glass, #login, #getfree{
+    float: right;   
+}
+
+#contact{
+    margin-left: 20px;
+}
+
+#globe{
+    width: 16px;
+    height: 16px;
+    filter: brightness(0);
+}
+
+#language::after{
+    content: '|';
+    margin-left: 20px;
+}
+
+#language > a, #contact > a{
+    color: #32495b;
+    text-decoration: none;
+}
+
+#login{
+    margin: 0 25px;
+}
+
+#glass img{
+    width: 15px;
+}
+
+/* Second nav bar rules */  
+
+nav.second li:not(#logo){
+    padding-top: 30px;
+    padding-bottom: 25pX;
+    margin-left: 30px;
+    float: right;
+}
+
+nav.second a{
+    text-decoration: none;
+    color: #32495b;
+}
+
+#logo{
+    float: left;
+    padding: 25px 0;
+}
+
+/* Jumbotron rules */
+
+.jumbotron{
+    height: 650px;
+    background-color: #fff2ee;
+    background-position-y: -85%;
+    background-position-x: 130%;
+    background-image: url(../img/jumbotron.png);
+    background-repeat: no-repeat;
+}
+
+.separator{
+    height: 80px;
+    border-top: 4px solid #33475b;
+    border-bottom: 4px solid #33475b;
+    background-color: #afebe4;
+}
+
+#jumbo_information{
+    width: 50%;
+    padding-top: 50px;
+}
+
+#jumbo_title{
+    font-size: 45px;
+    font-weight: 900;
+}
+
+#jumbo_description{
+    margin: 35px 0;
+    line-height: 200%;
+}
+
+#jumbo_information > a{
+    display: inline-block;
+    padding: 25px 40px;
+}
+
+#jumbo_subtitle{
+    margin-top: 40px;
+    font-size: 13px;
+}
+
+/********************
+*Main rules
+********************/
+
+/* First section rules */
+
+section.first{
+    background-color: #f4f9fd;
+    text-align: center;
+}
+
+#cube{
+    margin-top: 50px;
+    height: 200px;
+}
+
+section.first > div > h1{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+section.first > div > p{
+    width: 70%;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.product{
+    box-shadow: 1px 1px 20px 0px lightgrey;
+    background-color: white;
+}
+
+.first.product{
+    margin: 50px 0;
+}
+
+.first.product > *{
+    float: left;
+}
+
+.first.product > .left_column{
+    width: 30%;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-bottom: 60px;
+}
+
+.first.product > .right_column{
+    width: 70%;
+    padding-top: 60px;
+    padding-right: 60px;
+    padding-left: 40px;
+    text-align: initial;
+}
+
+.product_image{
+    height: 100px;
+}
+
+.product_title{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.product_button{
+    padding: 25px 40px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.product_description:not(.first.product .product_description){
+    height: 120px; /* Unsure if it should be a fixed height, but it makes all the products have equal height */
+    line-height: 30px;
+}
+
+.first.product .product_description{
+    margin: 30px 0;
+    line-height: 30px;
+}
+
+.feature{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.first.product > .right_column > .line{
+    margin-left: 60px;
+    width: 50%;
+}
+
+.right_column > .pro{
+    margin: 40px 0;
+}
+
+.second.product, .third.product, .fourth.product{
+    width: calc(89%/3);
+    float: left;
+    padding: 0 40px;
+}
+
+.third.product{
+    margin: 0 60px;
+}
+
+section.first .row{
+    margin: 50px 0;
+}
+
+.row img{
+    margin: 20px 0;
+}
+
+.row .product_title{
+    margin-bottom: 40px;
+}
+
+.row .line{
+    margin-top: 70px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.row .pro{
+    text-align: initial;
+}
+
+.row .feature{
+    margin-bottom: 30px;
+}
+
+.row .product_button{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* Second section rules */
+
+section.second{
+    background-image: linear-gradient(45deg,#00a4bd,#00bda5);
+    text-align: center;
+}
+
+section.second > .container *{
+    color: white;
+}
+
+section.second > .container > h1{
+    font-size: 33px; 
+}
+
+section.second > .container > p{
+    line-height: 30px;
+}
+
+section.second h1{
+    padding-top: 55px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+section.second .first.row{
+    margin-top: 50px;
+}
+
+section.second .second.row{
+    padding-bottom: 100px;
+}
+
+section.second .stat_box{
+    float: left;
+    width: calc(100%/4);
+    border-right: 1px solid white;
+}
+
+section.second .box:last-child{
+    border-right: 0;
+}
+
+section.second hr{
+    color: white;
+}
+
+.stat_number{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+section.second .stat_number::after{
+    margin-left: 5px;
+    content: '+';
+    font-size: 30px;
+    font-weight: initial;
+}
+
+section.second .stat_desc{
+    margin: 20px 0;
+    font-size: 12px;
+}
+
+/* First part of third section rules */
+
+.company_section{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.company_data{
+    float: left;
+    width: 20%;
+}
+
+.company_row:first-child{
+    margin-bottom: 30px;
+    padding-top: 40px;
+}
+
+.company_box{
+    float: right;
+    padding-left: 50px;
+}
+
+.company_logo{
+    float: left;
+    width: 130px;
+    margin-right: 25px;
+}
+
+.company_number{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.company_desc{
+    margin-top: 40px;
+    line-height: 30px;
+}
+
+.company_desc > span{
+    font-weight: bold;
+}
+
+/* Second part of third section rules */
+
+.get_product{
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.get_product_info, .get_product_image{
+    float: left;
+}
+
+.get_product_image{
+    text-align: right;
+}
+
+.get_product_info{
+    width: 40%;
+}
+
+.get_product_image{
+    width: 60%;
+}
+
+.get_product_image > img{
+    height: 410px;
+}
+
+.get_product_title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.get_product_desc{
+    line-height: 30px;
+    margin: 40px 0;
+}
+
+.get_product a{
+    margin: 0;
+}
+
+.get_product_subtitle{
+    font-size: 13px;
+    margin-top: 40px;
+}
+
+/********************
+*Footer rules
+********************/
+
+#site_footer{
+    background-color: #32495b;
+}
+
+#site_footer *:not(.footer_title, #support_button, .copyright){
+    color: #c8d4e0;
+}
+
+.footer_column{
+    float: left;
+    width: calc(90%/4);
+    margin-top: 40px;
+    margin-right: 35px;
+}
+
+.footer_column:last-child{
+    margin-right: 0px;
+}
+
+.footer_title{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.footer_option{
+    display: block;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
+#support_button{
+    display: inline-block;
+    background-color: #dadee0;
+    border-radius: 7px;
+    color: #32495b;
+    padding: 15px 10px;
+    margin-top: 0;
+}
+
+.languages{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.languages a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.social_networks > a{
+    margin-right: 20px;
+}
+
+.privacy{
+    margin-top: 40px;
+}
+
+#privacy_logo{
+    float: left;
+    filter: contrast(0.5);
+}
+
+.privacy > a{
+    float: right;
+    text-decoration: none;
+}
+
+.privacy > a:nth-child(2){
+    margin-left: 25px;
+}
+
+.copyright{
+    color: white;
+    margin-top: 10px;
+    padding-bottom: 50px;
+}
