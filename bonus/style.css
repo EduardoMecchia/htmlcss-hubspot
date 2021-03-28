@@ -562,25 +562,31 @@ section.second .stat_desc{
 
 .chat{
     padding: 20px;
+    padding-top: 40px;
     border-radius: 7px;
     line-height: 30px;
     position: fixed; 
     bottom: 100px;
-    right: 30px;
+    right: 20px;
     width: 18%;
     background-color: white;
 }
 
-.chat_button > img{
-    background-color: #32495b;
-    border-radius: 50%;
-}
-
 .chat_image{
-    position: relative;
+    position: absolute;
+    width: 20%;
+    left: 50%;
+    bottom: 70%;
+    transform: translateX(-50%);
 }
 
-.chat_image > img{
-    position: absolute;
-    width: 50px;
+.chat_button{
+    position: fixed; 
+    bottom: 30px;
+    right: 20px;
+}
+
+.chat_button > img{
+    background-color: #425b78;
+    border-radius: 50%;
 }
