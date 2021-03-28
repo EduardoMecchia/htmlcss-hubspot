@@ -553,3 +553,34 @@ section.second .stat_desc{
     margin-top: 10px;
     padding-bottom: 50px;
 }
+
+/********************
+*Bonus rules
+********************/
+
+/* Chat rules */ 
+
+.chat{
+    padding: 20px;
+    border-radius: 7px;
+    line-height: 30px;
+    position: fixed; 
+    bottom: 100px;
+    right: 30px;
+    width: 18%;
+    background-color: white;
+}
+
+.chat_button > img{
+    background-color: #32495b;
+    border-radius: 50%;
+}
+
+.chat_image{
+    position: relative;
+}
+
+.chat_image > img{
+    position: absolute;
+    width: 50px;
+}
