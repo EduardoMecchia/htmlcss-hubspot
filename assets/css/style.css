@@ -617,30 +617,6 @@ section.second .stat_desc{
     top: 70px;
 }
 
-.dropdown, .dropdown > li{
-    display: none;
-}
-
-.dropdown a{
-    text-decoration: none;
-}
-
-#nav_bar_languages{
-    position: relative;
-}
-
-#nav_bar_languages:hover .dropdown, .dropdown li{
-    display: block;
-}
-
-#nav_bar_languages .dropdown > li{
-    background-color: white;
-    padding: 15px 20px;
-}
-
-#nav_bar_languages .dropdown > li > a{
-    font-weight: bold;
-}
 
 .dropdown:before {
     content: "";
@@ -667,6 +643,35 @@ section.second .stat_desc{
     border-bottom-color: lightgrey;
     z-index: 0;
 }
+
+.dropdown, .dropdown > li{
+    display: none;
+}
+
+.dropdown a{
+    text-decoration: none;
+}
+
+/* Languages dropdown menu */
+
+#nav_bar_languages{
+    position: relative;
+}
+
+#nav_bar_languages:hover .dropdown, .dropdown li{
+    display: block;
+}
+
+#nav_bar_languages .dropdown > li{
+    background-color: white;
+    padding: 15px 20px;
+}
+
+#nav_bar_languages .dropdown > li > a{
+    font-weight: bold;
+}
+
+/* Partners dropdown menu */
 
 nav.second li:nth-child(3):hover .dropdown, .dropdown li{
     display: block;
