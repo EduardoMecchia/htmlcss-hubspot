@@ -611,6 +611,12 @@ section.second .stat_desc{
 
 /* Dropdown menus rules */
 
+.dropdown{
+    border: 1px solid lightgrey;
+    position: absolute;
+    top: 70px;
+}
+
 .dropdown, .dropdown > li{
     display: none;
 }
@@ -634,12 +640,6 @@ section.second .stat_desc{
 
 #nav_bar_languages .dropdown > li > a{
     font-weight: bold;
-}
-
-#nav_bar_languages .dropdown{
-    border: 1px solid lightgrey;
-    position: absolute;
-    top: 70px;
 }
 
 .dropdown:before {
@@ -666,4 +666,26 @@ section.second .stat_desc{
     border-width: 10px;
     border-bottom-color: lightgrey;
     z-index: 0;
+}
+
+nav.second li:nth-child(3):hover .dropdown, .dropdown li{
+    display: block;
+}
+
+nav.second li:nth-child(3){
+    position: relative;
+}
+
+nav.second li:nth-child(3) .dropdown{
+    position: absolute;
+    top: 70px;
+}
+
+nav.second li:nth-child(3) .dropdown > li{
+    background-color: white;
+    
+}
+
+nav.second li:nth-child(3) .dropdown > li > a{
+    font-weight: bold;
 }
