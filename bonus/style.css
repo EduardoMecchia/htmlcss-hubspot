@@ -562,33 +562,42 @@ section.second .stat_desc{
 
 .chat{
     padding: 20px;
-    padding-top: 40px;
+    padding-top: 25px;
     border-radius: 7px;
     line-height: 30px;
     position: fixed; 
-    bottom: 100px;
+    bottom: 125px;
     right: 20px;
-    width: 18%;
+    width: 280px;
     background-color: white;
+    box-shadow: -2px 5px 10px #000a;
+}
+
+.chat .cross{
+    color: grey;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 30px;
 }
 
 .chat_image{
     position: absolute;
     width: 20%;
     left: 50%;
-    bottom: 70%;
+    bottom: 85%;
     transform: translateX(-50%);
 }
 
 .chat_button{
     position: fixed; 
-    bottom: 30px;
+    bottom: 20px;
     right: 20px;
     background-color: #425b78;
     border-radius: 50%;
     width: 80px;
     height: 80px;
-    box-shadow: 0px 0px 14px black;
+    box-shadow: -2px 5px 10px #000a;
 }
 
 .chat_button > img{
@@ -599,3 +608,5 @@ section.second .stat_desc{
     width: 40px;
     height: 40px;
 }
+
+/* Dropdown menus rules */
