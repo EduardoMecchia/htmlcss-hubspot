@@ -82,7 +82,7 @@ nav.first li{
     padding: 30px 0;
 }
 
-#language, #contact{
+#nav_bar_language, #contact{
     float: left;
 }
 
@@ -100,12 +100,12 @@ nav.first li{
     filter: brightness(0);
 }
 
-#language::after{
+#nav_bar_language::after{
     content: '|';
     margin-left: 20px;
 }
 
-#language > a, #contact > a{
+#nav_bar_language > a, #contact > a{
     color: #32495b;
     text-decoration: none;
 }
@@ -515,13 +515,13 @@ section.second .stat_desc{
     margin-top: 0;
 }
 
-.languages{
+.footer_languages{
     text-align: center;
     margin-top: 100px;
     margin-bottom: 20px;
 }
 
-.languages a{
+.footer_languages a{
     text-decoration: none;
     margin-right: 20px;
 }
@@ -553,3 +553,60 @@ section.second .stat_desc{
     margin-top: 10px;
     padding-bottom: 50px;
 }
+
+/********************
+*Bonus rules
+********************/
+
+/* Chat rules */ 
+
+.chat{
+    padding: 20px;
+    padding-top: 25px;
+    border-radius: 7px;
+    line-height: 30px;
+    position: fixed; 
+    bottom: 125px;
+    right: 20px;
+    width: 280px;
+    background-color: white;
+    box-shadow: -2px 5px 10px #000a;
+}
+
+.chat .cross{
+    color: grey;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 30px;
+}
+
+.chat_image{
+    position: absolute;
+    width: 20%;
+    left: 50%;
+    bottom: 85%;
+    transform: translateX(-50%);
+}
+
+.chat_button{
+    position: fixed; 
+    bottom: 20px;
+    right: 20px;
+    background-color: #425b78;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    box-shadow: -2px 5px 10px #000a;
+}
+
+.chat_button > img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+}
+
+/* Dropdown menus rules */
