@@ -121,8 +121,10 @@ nav.first li{
 /* Second nav bar rules */  
 
 nav.second li:not(#logo){
-    padding: 25px 0;
+    padding-top: 30px;
+    padding-bottom: 25pX;
     margin-left: 30px;
+    float: right;
 }
 
 nav.second a{
@@ -133,10 +135,6 @@ nav.second a{
 #logo{
     float: left;
     padding: 25px 0;
-}
-
-#secondnav_1, #secondnav_2, #secondnav_3, #secondnav_4, #secondnav_5{
-    float: right;
 }
 
 /* Jumbotron rules */
