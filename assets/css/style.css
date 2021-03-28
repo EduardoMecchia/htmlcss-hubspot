@@ -253,7 +253,7 @@ section.first > div > p{
     margin-top: 30px;
 }
 
-.product_description{
+.product_description:not(.first.product .product_description){
     height: 120px; /* Unsure if it should be a fixed height, but it makes all the products have equal height */
     line-height: 30px;
 }
@@ -481,7 +481,7 @@ section.second .stat_desc{
     background-color: #32495b;
 }
 
-#site_footer *:not(.footer_title, #support_button){
+#site_footer *:not(.footer_title, #support_button, .copyright){
     color: #c8d4e0;
 }
 
@@ -550,6 +550,7 @@ section.second .stat_desc{
 }
 
 .copyright{
+    color: white;
     margin-top: 10px;
     padding-bottom: 50px;
 }
