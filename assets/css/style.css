@@ -538,6 +538,7 @@ section.second .stat_desc{
 
 #privacy_logo{
     float: left;
+    filter: contrast(0.5);
 }
 
 .privacy > a{
