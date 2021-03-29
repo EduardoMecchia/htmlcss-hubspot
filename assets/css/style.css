@@ -430,27 +430,23 @@ section.second .stat_desc{
 
 .get_product{
     margin-top: 100px;
-    margin-bottom: 30px;
-}
-
-.get_product_info, .get_product_image{
-    float: left;
+    margin-bottom: 40px;
 }
 
 .get_product_image{
     text-align: right;
+    width: 60%;
+    float: left
 }
 
 .get_product_info{
     width: 40%;
-}
-
-.get_product_image{
-    width: 60%;
+    float: left
 }
 
 .get_product_image > img{
-    height: 410px;
+    height: 380px;
+    padding-bottom: 20px;
 }
 
 .get_product_title{
