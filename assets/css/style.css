@@ -131,7 +131,7 @@ nav.second .unstyled.clearfix > li > a{
     text-decoration: none;
     color: #32495b;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 #logo{
@@ -618,6 +618,7 @@ section.second .stat_desc{
     position: absolute;
     top: 70px;
     background-color: white;
+    box-shadow: 0px 0px 4px lightgrey;
 }
 
 .dropdown:before {
@@ -654,6 +655,10 @@ section.second .stat_desc{
     text-decoration: none;
 }
 
+nav.second li:nth-child(2), li:nth-child(3), li:nth-child(4), li:nth-child(5){
+    position: relative;
+}
+
 /* Languages dropdown menu */
 
 #nav_bar_languages{
@@ -672,14 +677,61 @@ section.second .stat_desc{
     font-weight: bold;
 }
 
-/* Partners dropdown menu */
+/* Software dropdown menu */
 
-nav.second li:nth-child(3):hover .dropdown, .dropdown *{
+
+
+/* Resources dropdown menu */
+
+nav.second li:nth-child(4):hover .resources.dropdown, .resources.dropdown *{
     display: block;
 }
 
-nav.second li:nth-child(3){
-    position: relative;
+.resources.dropdown{
+    right: -240px;
+    width: 1000px;
+}
+
+.resources.dropdown a{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.resources.dropdown p{
+    margin-bottom: 40px;
+}
+
+.resources_row{
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+.resources_entry{
+    float: left;
+    width: 33%;
+}
+
+.resources.dropdown:before {
+    top: -21px;
+    right: 233px;
+}
+
+.resources.dropdown:after {
+    right: 234px;
+    top: -21px;
+}
+
+.resources.dropdown hr{
+    margin: 0 auto;
+    width: 93%;
+    color: lightgrey;
+}
+
+/* Partners dropdown menu */
+
+nav.second li:nth-child(3):hover .partners.dropdown, .partners.dropdown *{
+    display: block;
 }
 
 .partners.dropdown{
@@ -697,7 +749,7 @@ nav.second li:nth-child(3){
 
 .partners.dropdown a{
     font-weight: bold;
-    font-size: 17px;
+    font-size: 18px;
     margin: 10px 0;
 }
 
@@ -717,10 +769,6 @@ nav.second li:nth-child(3){
 
 /* About dropdown menu */
 
-nav.second li:nth-child(2){
-    position: relative;
-}
-
 nav.second li:nth-child(2):hover .about.dropdown, .about.dropdown *{
     display: block;
 }
@@ -730,10 +778,12 @@ nav.second li:nth-child(2):hover .about.dropdown, .about.dropdown *{
     top: 70px;
     width: 600px;
     right: -29px;
+    padding: 0px 14px;
 }
 
 .about_left > div, .about_center > div, .about_right > div{
     font-weight: bold;
+    font-size: 18px;
 }
 
 .about_left, .about_center, .about_right{
