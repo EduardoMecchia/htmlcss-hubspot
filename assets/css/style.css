@@ -728,14 +728,20 @@ nav.second li:nth-child(2):hover .about.dropdown, .about.dropdown *{
 .about.dropdown{
     position: absolute;
     top: 70px;
+    width: 600px;
+    right: -29px;
 }
 
-.left > div, .ctr > div, .right > div{
+.about_left > div, .about_center > div, .about_right > div{
     font-weight: bold;
 }
 
-.left, .ctr, .right{
-    margin: 10px 50px;
+.about_left, .about_center, .about_right{
+    padding: 30px 30px;
     float: left;
     width: 33%;
+}
+
+.about.dropdown a{
+    margin-top: 25px;
 }
