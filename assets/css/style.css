@@ -120,7 +120,7 @@ nav.first li{
 
 /* Second nav bar rules */  
 
-nav.second li:not(#logo){
+nav.second .unstyled.clearfix > li:not(#logo){
     padding-top: 30px;
     padding-bottom: 25pX;
     margin-left: 30px;
@@ -130,6 +130,8 @@ nav.second li:not(#logo){
 nav.second a{
     text-decoration: none;
     color: #32495b;
+    font-weight: bold;
+    font-size: 17px;
 }
 
 #logo{
@@ -662,12 +664,12 @@ section.second .stat_desc{
     display: block;
 }
 
-#nav_bar_languages .dropdown > li{
+.languages.dropdown > li{
     background-color: white;
     padding: 15px 20px;
 }
 
-#nav_bar_languages .dropdown > li > a{
+.languages.dropdown > li > a{
     font-weight: bold;
 }
 
@@ -681,16 +683,22 @@ nav.second li:nth-child(3){
     position: relative;
 }
 
-nav.second li:nth-child(3) .dropdown{
+.partners.dropdown{
     position: absolute;
     top: 70px;
 }
 
-nav.second li:nth-child(3) .dropdown > li{
+.partners.dropdown li{
     background-color: white;
-    
+    width: 300px;
+    padding: 20px 40px;
 }
 
-nav.second li:nth-child(3) .dropdown > li > a{
+.partners.dropdown a{
     font-weight: bold;
+    margin: 10px 0;
+}
+
+.partners.dropdown *{
+    display: inline-block;
 }
