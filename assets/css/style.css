@@ -621,7 +621,7 @@ section.second .stat_desc{
     box-shadow: 0px 0px 4px lightgrey;
 }
 
-.dropdown:before {
+.dropdown::before {
     content: "";
     position: absolute;
     border-color: rgba(194, 225, 245, 0);
@@ -634,7 +634,7 @@ section.second .stat_desc{
     z-index: 1;
 }
 
-.dropdown:after {
+.dropdown::after {
     content: "";
     position: absolute;
     right: 23px;
@@ -679,7 +679,86 @@ nav.second li:nth-child(2), li:nth-child(3), li:nth-child(4), li:nth-child(5){
 
 /* Software dropdown menu */
 
+nav.second li:nth-child(6):hover .software.dropdown{
+    display: block;
+}
 
+.software.dropdown{
+    width: 580px;
+    padding: 0 40px;
+    top: 150px;
+}
+
+.software_icon{
+    width: 9%;
+    background-color: #f5f8fa;
+    position: relative;
+}
+
+.software.dropdown img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.software.dropdown a{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.software.dropdown p{
+    margin-bottom: 20px;
+}
+
+.software.dropdown::before {
+    top: -21px;
+    right: 476px;
+}
+
+.software.dropdown::after {
+    right: 477px;
+    top: -21px;
+}
+
+.software.dropdown hr{
+    margin: 0 auto;
+    width: 100%;
+    color: lightgrey;
+}
+
+.software_row{
+    margin: 20px 0;
+}
+
+.software_row *{
+    display: inline-block;
+}
+
+.software_info{
+    width: 90%;
+}
+
+.software_info *{
+    display: block;
+}
+
+.new{
+    background-color: #00bda5;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.software_row:nth-child(6) > .software_info > a{
+    display: inline-block;
+}
 
 /* Resources dropdown menu */
 
@@ -712,12 +791,12 @@ nav.second li:nth-child(4):hover .resources.dropdown, .resources.dropdown *{
     width: 33%;
 }
 
-.resources.dropdown:before {
+.resources.dropdown::before {
     top: -21px;
     right: 233px;
 }
 
-.resources.dropdown:after {
+.resources.dropdown::after {
     right: 234px;
     top: -21px;
 }
@@ -757,12 +836,12 @@ nav.second li:nth-child(3):hover .partners.dropdown, .partners.dropdown *{
     margin-bottom: 20px;
 }
 
-.partners.dropdown:before {
+.partners.dropdown::before {
     top: -21px;
     right: 128px;
 }
 
-.partners.dropdown:after {
+.partners.dropdown::after {
     right: 129px;
     top: -21px;
 }
