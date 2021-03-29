@@ -130,7 +130,6 @@ nav.second .unstyled.clearfix > li:not(#logo){
 nav.second .unstyled.clearfix > li > a{
     text-decoration: none;
     color: #32495b;
-    font-weight: bold;
     font-size: 18px;
 }
 
@@ -690,18 +689,22 @@ nav.second li:nth-child(6):hover .software.dropdown{
 }
 
 .software_icon{
-    width: 9%;
+    width: 10%;
     background-color: #f5f8fa;
-    position: relative;
+    float: left;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.software_info{
+    width: 85%;
+    float: left;
+    margin-left: 10px;
 }
 
 .software.dropdown img{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
 }
 
 .software.dropdown a{
@@ -711,16 +714,16 @@ nav.second li:nth-child(6):hover .software.dropdown{
 }
 
 .software.dropdown p{
-    margin-bottom: 20px;
+    font-size: 15px;
 }
 
 .software.dropdown::before {
     top: -21px;
-    right: 476px;
+    right: 480px;
 }
 
 .software.dropdown::after {
-    right: 477px;
+    right: 481px;
     top: -21px;
 }
 
@@ -731,15 +734,11 @@ nav.second li:nth-child(6):hover .software.dropdown{
 }
 
 .software_row{
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 .software_row *{
     display: inline-block;
-}
-
-.software_info{
-    width: 90%;
 }
 
 .software_info *{
@@ -779,6 +778,7 @@ nav.second li:nth-child(4):hover .resources.dropdown, .resources.dropdown *{
 
 .resources.dropdown p{
     margin-bottom: 40px;
+    font-size: 15px;
 }
 
 .resources_row{
@@ -788,7 +788,8 @@ nav.second li:nth-child(4):hover .resources.dropdown, .resources.dropdown *{
 
 .resources_entry{
     float: left;
-    width: 33%;
+    width: 30%;
+    margin-right: 30px;
 }
 
 .resources.dropdown::before {
@@ -834,6 +835,7 @@ nav.second li:nth-child(3):hover .partners.dropdown, .partners.dropdown *{
 
 .partners.dropdown p{
     margin-bottom: 20px;
+    font-size: 15px;
 }
 
 .partners.dropdown::before {
