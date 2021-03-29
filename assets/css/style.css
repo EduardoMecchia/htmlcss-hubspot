@@ -127,7 +127,7 @@ nav.second .unstyled.clearfix > li:not(#logo){
     float: right;
 }
 
-nav.second a{
+nav.second .unstyled.clearfix > li > a{
     text-decoration: none;
     color: #32495b;
     font-weight: bold;
@@ -617,8 +617,8 @@ section.second .stat_desc{
     border: 1px solid lightgrey;
     position: absolute;
     top: 70px;
+    background-color: white;
 }
-
 
 .dropdown:before {
     content: "";
@@ -665,7 +665,6 @@ section.second .stat_desc{
 }
 
 .languages.dropdown > li{
-    background-color: white;
     padding: 15px 20px;
 }
 
@@ -675,7 +674,7 @@ section.second .stat_desc{
 
 /* Partners dropdown menu */
 
-nav.second li:nth-child(3):hover .dropdown, .dropdown li{
+nav.second li:nth-child(3):hover .dropdown, .dropdown *{
     display: block;
 }
 
@@ -686,19 +685,57 @@ nav.second li:nth-child(3){
 .partners.dropdown{
     position: absolute;
     top: 70px;
+    right: -135px;
+    width: 800px;
 }
 
-.partners.dropdown li{
-    background-color: white;
-    width: 300px;
+.partners.dropdown > div{
+    width: 50%;
     padding: 20px 40px;
+    float: left;
 }
 
 .partners.dropdown a{
     font-weight: bold;
+    font-size: 17px;
     margin: 10px 0;
 }
 
-.partners.dropdown *{
-    display: inline-block;
+.partners.dropdown p{
+    margin-bottom: 20px;
+}
+
+.partners.dropdown:before {
+    top: -21px;
+    right: 128px;
+}
+
+.partners.dropdown:after {
+    right: 129px;
+    top: -21px;
+}
+
+/* About dropdown menu */
+
+nav.second li:nth-child(2){
+    position: relative;
+}
+
+nav.second li:nth-child(2):hover .about.dropdown, .about.dropdown *{
+    display: block;
+}
+
+.about.dropdown{
+    position: absolute;
+    top: 70px;
+}
+
+.left > div, .ctr > div, .right > div{
+    font-weight: bold;
+}
+
+.left, .ctr, .right{
+    margin: 10px 50px;
+    float: left;
+    width: 33%;
 }
