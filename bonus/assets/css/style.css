@@ -122,6 +122,10 @@ nav.first li{
 
 /* Second nav bar rules */  
 
+nav.second{
+    padding-top: 85px;
+}
+
 nav.second .unstyled.clearfix > li:not(#logo){
     padding-top: 30px;
     padding-bottom: 25pX;
