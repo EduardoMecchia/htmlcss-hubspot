@@ -73,6 +73,8 @@ body{
 /* First nav bar rules */
 
 nav.first{
+    position: fixed;
+    width: 100%;
     color: #32495b;
     background-color: #f4f9fd;
     border-bottom: 1px solid #465b6b;
