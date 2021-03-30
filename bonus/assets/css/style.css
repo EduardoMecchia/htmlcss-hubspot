@@ -277,13 +277,13 @@ section.first > div > p{
 }
 
 .second.product, .third.product, .fourth.product{
-    width: calc(89%/3);
+    width: calc(90%/3);
     float: left;
     padding: 0 40px;
 }
 
 .third.product{
-    margin: 0 60px;
+    margin: 0 5%;
 }
 
 section.first .row{
