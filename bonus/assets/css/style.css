@@ -143,10 +143,10 @@ nav.second .unstyled.clearfix > li > a{
 /* Jumbotron rules */
 
 .jumbotron{
-    height: 650px;
+    height: 695px;
     background-color: #fff2ee;
-    background-position-y: -85%;
-    background-position-x: 130%;
+    background-position-x: right;
+    background-position-y: 83px;
     background-image: url(../img/jumbotron.png);
     background-repeat: no-repeat;
 }
